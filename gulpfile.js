@@ -105,3 +105,11 @@ gulp.task('watch', function() {
     gulp.watch(paths.src.js).on('change', browserSync.reload);
     gulp.watch(paths.src.html).on('change', browserSync.reload);
 });
+
+gulp.task('build', function() {
+    return gulp.src('src/styles/*.scss')  // Adjust source as needed
+      .pipe(sass())
+      .pipe(autoprefixer())
+      .pipe(cleanCSS())
+      .pipe(gulp.dest('public_html/styles'));  // Adjust destination as needed
+  });

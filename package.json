@@ -1,12 +1,13 @@
 {
-  "name": "Meyawo",
+  "name": "meyawo",
   "version": "1.5.0",
   "description": "An elegant responsive bootstrap 4.x theme.",
   "main": "gulpfile.js",
   "homepage": "https://Zzanho.github.io",
   "author": "DevCRUD",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "deploy": "gh-pages -d public_html"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
@@ -33,5 +34,13 @@
     "opera >= 23",
     "ios >= 7",
     "android >= 4"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zzanho/Zzanho.github.io.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zzanho/Zzanho.github.io/issues"
+  }
 }
